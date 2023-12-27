@@ -68,6 +68,6 @@ const blogs = [
   {
     title: "Completed the Capstone Project",
     content:
-      "After some time and tinkering, am able to complete this capstone blogs website. All comments and feedbacks are welcome 😊😊.",
+      "After some time and tinkering, am able to complete this capstone blogs website. All comments and feedbacks are welcome 😊😊. Link to the github repo is https://github.com/BikalRai/firstBlogSiteNoBackend",
   },
 ];
