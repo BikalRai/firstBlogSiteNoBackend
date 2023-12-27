@@ -1,0 +1,28 @@
+input,
+textarea {
+  outline: none;
+  font-size: 1.15rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.blog {
+  background-color: rgb(229, 125, 87);
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.blog__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog > button {
+  padding: var(--btn-padding);
+  font-weight: bolder;
+  font-size: 1.25rem;
+  background-color: var(--font-white);
+}

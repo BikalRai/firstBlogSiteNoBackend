@@ -1,0 +1,22 @@
+<%- include('./partials/header.ejs') %>
+<main>
+  <h1>All Blogs</h1>
+
+  <div class="blogs">
+    <% for(let i = blogs.length - 1; i >= 0; i--) { %>
+    <form class="blogs__blog" action="/action" method="POST">
+      <h3>Title: <%= blogs[i].title %></h3>
+      <p><%= blogs[i].content %></p>
+      <div class="blogs__blog-actions">
+        <button class="btn action" value="edit, <%= i %>" name="action">
+          Edit
+        </button>
+        <button class="btn action" name="action" value="del, <%= i %>">
+          Delete
+        </button>
+      </div>
+    </form>
+    <% } %>
+  </div>
+</main>
+<%- include('./partials/footer.ejs') %>

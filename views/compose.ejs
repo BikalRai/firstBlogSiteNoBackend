@@ -1,0 +1,29 @@
+<%- include('./partials/header.ejs') %>
+<main>
+  <h1>Compose a Blog</h1>
+  <div class="compose">
+    <form action="/create" method="POST">
+      <div class="compose__field">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" />
+      </div>
+      <div class="compose__field">
+        <label for="content">Content:</label>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit" class="btn compose__btn">COMPOSE</button>
+    </form>
+  </div>
+  <% if(locals.message) { %>
+  <p id="msg"><%= message %></p>
+  <script>
+    const msg = document.getElementById("msg");
+    setTimeout(() => {
+      if (msg) {
+        msg.textContent = "";
+      }
+    }, 3000);
+  </script>
+  <% } %>
+</main>
+<%- include('./partials/footer.ejs') %>

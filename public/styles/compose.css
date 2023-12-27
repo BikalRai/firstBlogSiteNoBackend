@@ -1,0 +1,29 @@
+.compose > form {
+  background-color: rgb(229, 125, 87);
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+  color: var(--font-white);
+}
+
+.compose > form > .compose__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.compose > form > .compose__field > input,
+.compose > form > .compose__field > textarea {
+  padding: 1rem;
+  outline: none;
+}
+
+.compose > form > .compose__field > textarea {
+  resize: none;
+}
+
+.compose__btn {
+  padding: var(--btn-padding);
+  font-weight: bolder;
+  font-size: 1.25rem;
+  background-color: var(--font-white);
+}
