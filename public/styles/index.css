@@ -81,7 +81,6 @@ nav > .hamburger > .hamburger__line {
 }
 
 nav > .nav__links {
-  display: flex;
   flex-direction: column;
   gap: 1rem;
   background-color: #ffe382;
